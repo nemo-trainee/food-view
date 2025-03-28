@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <title>FoodView/Was koche ich heute?</title>
+</head>
+<body>
+  <header class="flex flex-col sticky">
+    <a href="assets/index.html"><img class="myButton relative border-groove" src="../assets/images/HomeButton.png"></a>
+    <ul class="mt-2">
+      <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="kochen.html">Was koche ich
+          heute?</a></li>
+      <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="backen.html">Was backe ich
+          heute?</a></li>
+      <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="Tagesrezept.html">Rezept des
+          Tages</a></li>
+      <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="Lieblingsrezepte.html">Meine
+          Lieblingsrezepte</a></li>
+      <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="hilfe.html">Hilfe</a></li>
+      <li class=float-right><a class="block hover:underline font-[Annie] text-xl" href="Impressum.html">Impressum</a>
+      </li>
+    </ul list-none overflow-hidden>
+  </header>
+  <main class="p-20">
+      <h1 class="block text-center font-[Annie] text-6xl mt-12">Was koche ich heute?</h1>
+      <div class="grid grid-cols-2 justify-items-center h-full w-full">
+        <div class="text-center w-full h-full content-center justify-items-center">
+          <a href="herzhaftkochen.html"
+            class="hover:scale-110 block font-[Ribeye] text-5xl p-16 tracking-wide border-3 border-[#706596] bg-[#C8C0E3] min-w-md max-w-2xl mx-8 rounded-full mt-35">
+            <h2>Herzhaft</h2>
+          </a>
+        </div>
+        <div class="text-center w-full h-full content-center justify-items-center">
+          <a href="süßkochen.html"
+            class="hover:scale-110 block font-[Ribeye] text-5xl p-16 tracking-wide border-3 border-[#706596] bg-[#C8C0E3] min-w-md max-w-2xl mx-8 rounded-full mt-35">
+            <h2>Süß</h2>
+          </a>
+        </div>
+      </div>
+  </main>
+</body>
+</html>

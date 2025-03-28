@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Annie;
+    font-style: normal;
+    src: url("../fonts/AnnieUseYourTelescope-Regular.ttf");
+}
+
+@font-face {
+    font-family: Royale;
+    font-style: normal;
+    src: url("../fonts/BonheurRoyale-Regular.ttf");
+}
+
+@font-face {
+    font-family: Ribeye;
+    font-style: normal;
+    src: url("../fonts/Ribeye-Regular.ttf");
+}
+
+body {
+    background-image: url("../images/Hintergrund.png");
+}
+
+header {
+    background-image: url("../images/balken.png");
+    min-height: 15vh;
+    height: 180px;
+    margin-bottom: 1rem;
+    top: -20px; 
+    z-index: 100;
+}
+
+main {
+    height: calc(100% - 250px);
+}
+
+main.h-full {
+    height: 100%;
+}
+
+.myButton {
+    margin-left: 1%;
+    margin-top: 7vh;
+}
+
+
+li a {
+padding: 8px;
+}

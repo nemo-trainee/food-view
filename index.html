@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <style class="list-none overflow-hidden float-left block bg-none underline bg-none border-groove ">
+  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"> </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>FoodView</title>
+</head>
+<body class="h-screen">
+  <header class="flex flex-col sticky">
+    <a href="index.html"><img class="myButton relative border-groove" src="assets/images/HomeButton.png"></a>
+    <ul class="mt-2 list-none overflow-hidden">
+      <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="src/kochen.html">Was koche ich
+          heute?</a></li>
+      <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="src/backen.html">Was backe ich
+          heute?</a></li>
+      <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="src/Tagesrezept.html">Rezept des
+          Tages</a></li>
+      <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="src/Lieblingsrezepte.html">Meine
+          Lieblingsrezepte</a></li>
+      <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="src/hilfe.html">Hilfe</a></li>
+      <li class=float-right><a class="block hover:underline font-[Annie] text-xl" href="src/Impressum.html">Impressum</a>
+      </li>
+    </ul>
+  </header>
+  <main class="p-8">
+    <div class="grid grid-cols-2 justify-items-center h-full w-full">
+      <div class="text-center w-full h-full content-center justify-items-center">
+        <a href="src/kochen.html" class="hover:scale-110 block font-[Ribeye] text-5xl p-16 tracking-wide border-3 border-[#706596] bg-[#C8C0E3] rounded-full max-w-2xl mx-8">
+          <h2>Was koche ich heute?</h2>
+        </a>
+      </div>
+      <div class="text-center w-full h-full content-center justify-items-center">
+        <a href="src/backen.html" class="hover:scale-110 block font-[Ribeye] text-5xl p-16 tracking-wide border-3 border-[#9B6173] bg-[#E8C7D3] rounded-full max-w-2xl mx-8">
+          <h2>Was backe ich heute?</h2>
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
