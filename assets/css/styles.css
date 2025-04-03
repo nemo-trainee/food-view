@@ -27,6 +27,11 @@ header {
     margin-bottom: 1rem;
     top: -20px; 
     z-index: 100;
+    background-size: cover;
+}
+
+nav {
+    height:180px; 
 }
 
 main {

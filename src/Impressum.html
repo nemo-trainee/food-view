@@ -11,19 +11,70 @@
   </head>
   <body class="h-screen">
     <header class="flex flex-col sticky">
-      <a href="../index.html"><img class="myButton relative border-groove" src="../assets/images/HomeButton.png"></a>
-      <ul class="mt-2">
-        <li class= float-left><a class="block hover:underline font-[Annie] text-xl" href="kochen.html" >Was koche ich heute?</a></li>
-        <li class= float-left><a class="block hover:underline font-[Annie] text-xl" href="backen.html" >Was backe ich heute?</a></li>
-        <li class= float-left><a class="block hover:underline font-[Annie] text-xl" href="Tagesrezept.html" >Rezept des Tages</a></li>
-        <li class= float-left><a class="block hover:underline font-[Annie] text-xl" href="Lieblingsrezepte.html" >Meine Lieblingsrezepte</a></li>
-        <li class= float-left><a class="block hover:underline font-[Annie] text-xl" href="hilfe.html" >Hilfe</a></li>
-        <li class= float-right><a class="block hover:underline font-[Annie] text-xl" href="Impressum.html" >Impressum</a></li>
-      </ul list-none overflow-hidden>
-      </header>
-      <main class="p-8 text-center w-full h-full">
+      <nav class="flex lg:flex-col justify-between items-center lg:items-start p-6">
+      <a href="../index.html"><img class="lg:mt-10 relative border-groove" src="../assets/images/HomeButton.png"></a>
+      <div>
+        <ul class="mt-2 list-none overflow-hidden hidden lg:flex">
+          <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="kochen.html">Was koche ich
+              heute?</a></li>
+          <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="backen.html">Was backe ich
+              heute?</a></li>
+          <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="Tagesrezept.html">Rezept des
+              Tages</a></li>
+          <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="Lieblingsrezepte.html">Meine
+              Lieblingsrezepte</a></li>
+          <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="hilfe.html">Hilfe</a></li>
+          <li class=float-right><a class="block hover:underline font-[Annie] text-xl" href="Impressum.html">Impressum</a>
+          </li>
+        </ul>
+      </div>
+      
+        <div class="flex float-right lg:hidden">
+            <button type="button"
+                class="p-5 -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                data-collapse-show="mobile-menu">
+                <span class="sr-only">Menü öffnen</span>
+                <svg class="size-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+  
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="hidden" role="dialog" aria-modal="true" id="mobile-menu">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div
+                class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto mx-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 backdrop-blur-sm"
+                data-collapse-close="mobile-menu"
+                >
+                <div class="mt-6 flow-root rounded-lg bg-[#FBEDF2] border border-gray-300 p-4 mt-4">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                          <a href="kochen.html"
+                          class="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold text-gray-900 hover:bg-[#D2CCDE]">Was koche ich heute?</a>
+                          <a href="backen.html"
+                          class="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold text-gray-900 hover:bg-[#D2CCDE]">Was backe ich heute?</a>
+                          <a href="Tagesrezept.html"
+                          class="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold text-gray-900 hover:bg-[#D2CCDE]">Rezept des Tages</a>
+                          <a href="Lieblingsrezepte.html"
+                          class="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold text-gray-900 hover:bg-[#D2CCDE]">Meine Lieblingsrezepte</a>
+                          <a href="hilfe.html"
+                          class="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold text-gray-900 hover:bg-[#D2CCDE]">Hilfe</a>
+                          <a href="Impressum.html"
+                          class="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold text-gray-900 hover:bg-[#D2CCDE]">Impressum</a>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+      
+    </header>
+      <main class="lg:p-8 text-center lg:w-full lg:h-full">
         <div class="content-center grid h-full">
-          <h1 class="block text-center font-[Annie] text-5xl">Impressum</h1>
+          <h1 class="block text-center font-[Annie] text-4xl lg:text-5xl">Impressum</h1>
           <div class="italic mt-8">
             <p>Name: Olvia</p>
             <p>Nachname: Pein</p>
@@ -34,5 +85,6 @@
           </div>
         </div>
       </main>
+      <script src="../assets/js/script.js"></script>
   </body>
 </html>
