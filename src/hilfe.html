@@ -74,8 +74,15 @@
     </header>
       <main class="p-8 grid content-center justify-center">
         <h2 class="block text-center font-[Annie] text-4xl lg:text-5xl mt-12">Wobei brauchst du Hilfe?</h2>
-        <div class="block truncate mt-15">
-          <input class="mx-4 justify-center lg:flex p-2 w-80 lg:w-95 h-12 text-2xl lg:text-3xl font-[Annie] border-1 rounded-full border-[#9B6173] bg-[#E8C7D3] focus-visible:outline-[#9B6173]" type="text" placeholder="Suchen...">
+        <div  class="block truncate mt-15">
+          <div class="mt-6 flex max-w-md gap-x-4">
+            <label for="search" class="sr-only">Suche</label>
+            <input id="search" name="search" type="text" placeholder="Suchen..." class="justify-center lg:flex text-bold p-2 w-80 lg:w-95 h-12 text-2xl lg:text-3xl font-[Annie] border-1 rounded-full border-[#9B6173] bg-[#E8C7D3] focus-visible:outline-[#9B6173]">
+            <button type="submit" class="justify-items-center rounded-full bg-[#E8C7D3] border-1 border-[#9B6173] lg:text-2xl font-[Annie] px-4 py-2 text-2xl hover:bg-[#9B6173] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Suchen</button>
+            </div>
+        </div>
+        <div>
+          <input>
         </div>
       </main>
       <script src="../assets/js/script.js"></script>
