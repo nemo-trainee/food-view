@@ -23,7 +23,7 @@
               Tages</a></li>
           <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="Lieblingsrezepte.html">Meine
               Lieblingsrezepte</a></li>
-          <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="hilfe.html">Hilfe</a></li>
+          <li class=float-left><a class="block hover:underline font-[Annie] text-xl" href="hilfe.html">Suchen</a></li>
           <li class=float-right><a class="block hover:underline font-[Annie] text-xl" href="Impressum.html">Impressum</a>
           </li>
         </ul>
@@ -61,7 +61,7 @@
                           <a href="Lieblingsrezepte.html"
                           class="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold text-gray-900 hover:bg-[#D2CCDE]">Meine Lieblingsrezepte</a>
                           <a href="hilfe.html"
-                          class="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold text-gray-900 hover:bg-[#D2CCDE]">Hilfe</a>
+                          class="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold text-gray-900 hover:bg-[#D2CCDE]">Suchen</a>
                           <a href="Impressum.html"
                           class="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold text-gray-900 hover:bg-[#D2CCDE]">Impressum</a>
                       </a>
@@ -73,17 +73,19 @@
       
     </header>
       <main class="p-8 grid content-center justify-center">
-        <h2 class="block text-center font-[Annie] text-4xl lg:text-5xl mt-12">Wobei brauchst du Hilfe?</h2>
+        <h2 class="block text-center font-[Annie] text-4xl lg:text-5xl mt-12">Was möchtest Du suchen?</h2>
         <div  class="block truncate mt-15">
           <div class="mt-6 flex max-w-md gap-x-4">
+            <form action="https://www.chefkoch.de/rs/s0/Rezepte.html" method="get" id="search">
             <label for="search" class="sr-only">Suche</label>
             <input id="search" name="search" type="text" placeholder="Suchen..." class="justify-center lg:flex text-bold p-2 w-80 lg:w-95 h-12 text-2xl lg:text-3xl font-[Annie] border-1 rounded-full border-[#9B6173] bg-[#E8C7D3] focus-visible:outline-[#9B6173]">
             <button type="submit" class="justify-items-center rounded-full bg-[#E8C7D3] border-1 border-[#9B6173] lg:text-2xl font-[Annie] px-4 py-2 text-2xl hover:bg-[#9B6173] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Suchen</button>
-            </div>
+          </div>
         </div>
         <div>
           <input>
         </div>
+      </form>
       </main>
       <script src="../assets/js/script.js"></script>
   </body>
